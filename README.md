@@ -1,7 +1,7 @@
 # [JSL02] Submission: Debug the DOM
 
-You will: 
-1. Use the Starter Code Repo, 
+You will:
+1. Use the Starter Code Repo,
 2. Code your solution,
 3. Commit changes to your repo
 3. Submit GitHub Repo Link to LMS [JSL02] Submission Project Tab
@@ -23,8 +23,28 @@ In the current code, users can add the same fitness goal multiple times, leading
 
 **Explanation:**
 1. We first retrieve all the existing goals in the `goalList` using `querySelectorAll`.
+```js
+const goalList = document.querySelectorAll("example");
+```
+
 2. Then, we iterate through each existing goal and compare its text content with the new goal input.
+```js
+const list = goalList.children;
+
+
+for (let i = 0; i < list.length; i++) {
+}
+
+```
+
 3. If a duplicate is found, we display an alert message and exit the function using `return` to prevent the duplicate goal from being added.
+```js
+if (goalInput == listOfChildren[index].innerText) {
+    alert(`value:${goalInput} is already in the list`)
+    return;
+}
+```
+
 4. If no duplicate is found, we proceed to create and add the new goal as before.
 
 Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pwVxGLDUW

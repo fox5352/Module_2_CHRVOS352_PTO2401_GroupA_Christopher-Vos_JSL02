@@ -13,6 +13,7 @@ const displayWorkoutRoutine = () => {
 
     // checks length
     if (workoutInput.length === 0) {
+        alert("value is to short")
         return;
     }
 
@@ -31,12 +32,14 @@ const addNewGoal = () => {
 
     // checks length
     if (goalInput.length === 0) {
+        alert("value to short")
         return;
     }
 
     // checks if goals already added and returns early if it is
     for (let index = 0; index < listOfChildren.length; index++) {
         if (goalInput == listOfChildren[index].innerText) {
+            alert(`value:${goalInput} is already in the list`)
             return;
         }
     }
