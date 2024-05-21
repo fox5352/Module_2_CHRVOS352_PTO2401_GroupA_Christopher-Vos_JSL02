@@ -16,13 +16,6 @@ const displayWorkoutRoutine = () => {
         return;
     }
 
-    // checks if workouts already added and returns early if it is
-    for (let index = 0; index < listOfChildern.length; index++) {
-        if (workoutInput == listOfChildern[index].innerText) {
-            return;
-        }
-    }
-
     newWorkout.textContent = workoutInput;
     workoutList.appendChild(newWorkout);
 };
